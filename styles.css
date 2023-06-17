@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 3rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: sticky;
+  top: 0;
+  background-color: lightblue;
+  width: 100%;
+}
+nav {
+  padding: 2.5rem;
+}
+
+img {
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.nav-link {
+  align-items: space-between;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.nav-link a {
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  width: 650px;
+  min-width: 390px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  padding: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+
+a,
+p,
+li,
+label {
+  font-size: 1.5rem;
+}
+
+iframe {
+  width: 300px;
+  height: 210px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+li {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 600px;
+  flex: 1;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+#submit {
+  background-color: teal;
+  border: 10px solid yellow;
+  color: black;
+  width: 80px;
+  height: 50px;
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  width: 600px;
+  display: block;
+}
+
+@media (max-width: 390px) {
+  header,
+  h3,
+  form,
+  p,
+  footer,
+  ul {
+    inline-size: 350px;
+    overflow-wrap: break-word;
+  }
+
+  header {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #header-img {
+    width: 230px;
+    height: 110px;
+    align-items: center;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  li {
+    width: 300px;
+    flex: 1;
+    align-items: flex-start;
+  }
+}
